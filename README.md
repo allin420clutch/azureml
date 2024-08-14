@@ -14,11 +14,11 @@ If you haven't already done so, run `az login` to authenticate to Azure in your 
 
 
 ## Step 2: Reference Azure AI resources
-Based on the instructions [here](https://microsoft-my.sharepoint.com/:w:/p/mesameki/Ed5UKepTDSpCpUCwigrxFrsBKMBZrEugqhSrosnz8jtdZQ?e=cudeiv), you already have everything you need. Navigate to your hub and project, click on "Settings" from the left menu, scroll down to "Connected Resource" and click on "View all". We need the information here to fill some of the details of our yaml file below. Open your ./provisioning/provision.yaml file and let's fill it together step by step:
+Based on the instructions [here](https://microsoft-my.sharepoint.com/:w:/p/mesameki/Ed5UKepTDSpCpUCwigrxFrsBKMBZrEugqhSrosnz8jtdZQ?e=cudeiv), you already have everything you need. Navigate to your hub and project, click on "Settings" from the left menu, scroll down to "Connected Resource" and click on "View all". We need the information here to fill some of the details of our provision file. Open your ./src/provisioning/provision.py file and let's fill it together step by step:
 
 ### For the section under "ai":
 
-Under your AI Studio project's "Settings" tab, there is a section called "Project properties". Copy paste all the info you need from there into this part of the yaml file. Note that:
+Under your AI Studio project's "Settings" tab, there is a section called "Project properties". Copy paste all the info you need from there into this part of the provision file. Note that:
 - "hub_name": copy paste what you see under "hub resource name" in the UI 
 - "project_name"= The string under field "Name" in the UI
 
