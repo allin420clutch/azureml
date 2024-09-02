@@ -41,7 +41,7 @@ else:
     print(f"Data directory '{data_directory}' does not exist.")
     exit()
 
-index_name = "tutorial-index"  # your desired index name
+index_name = os.getenv("AZUREAI_SEARCH_INDEX_NAME", "tutorial-index");  # your desired index name
 index_path = build_index(
     name=index_name,  # name of your index
     vector_store="azure_ai_search",  # the type of vector store - in this case it is Azure AI Search. Users can also use "azure_cognitive search"
